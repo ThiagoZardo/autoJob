@@ -339,6 +339,8 @@ A árvore é alvo evolutivo. Diretórios só devem ser criados pela task que nec
 
 Fluxo: `Backlog → Ready → In Progress → Review → Done`.
 
+O funcionamento detalhado está em `GITHUB-PROJECT.md`. Somente tasks sem dependências pendentes podem entrar em `Ready`, que deve conter de uma a três opções. Cada sessão do Codex trabalha preferencialmente em uma única Issue e não inicia outra automaticamente ao terminar.
+
 Campos de issue:
 
 - Epic/fase;

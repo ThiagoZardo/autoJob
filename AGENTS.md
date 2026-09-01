@@ -15,8 +15,9 @@ Antes de decisões de produto ou arquitetura, consulte:
 1. `docs/PRD-SDD.md`: requisitos e desenho de referência;
 2. `docs/ROADMAP.md`: dependências e ordem dos épicos;
 3. `docs/TASKS.md`: unidades de trabalho e critérios de aceite;
-4. `docs/ADR/`, quando existir: decisões arquiteturais aprovadas;
-5. a descrição da task atual.
+4. `docs/GITHUB-PROJECT.md`: fluxo de Issues, Project e pull requests;
+5. `docs/ADR/`, quando existir: decisões arquiteturais aprovadas;
+6. a descrição da task atual.
 
 Não contradiga essa documentação silenciosamente. Se uma decisão precisar mudar, registre a justificativa em ADR e atualize os documentos afetados na mesma task, desde que isso esteja no escopo autorizado.
 
@@ -28,6 +29,16 @@ Não contradiga essa documentação silenciosamente. Se uma decisão precisar mu
 - Se um requisito essencial estiver ambíguo e alterar materialmente o resultado, pare e peça decisão; não invente escopo.
 - Preserve mudanças existentes do usuário e mantenha cada entrega pequena, reversível e verificável.
 - Ao concluir, pare. Não inicie automaticamente a próxima task.
+
+### GitHub Issues e Project
+
+- Cada sessão do Codex deve trabalhar preferencialmente em uma única Issue.
+- A Issue atual define o escopo autorizado; outras Issues relacionadas não fazem parte da sessão.
+- Somente Issues sem dependências pendentes podem entrar em `Ready`.
+- Mantenha de uma a três Issues em `Ready`; não abasteça a coluna antecipadamente além desse limite.
+- Uma Issue `L` nunca entra em `Ready`; divida-a. Reavalie qualquer `M` antes de promovê-la.
+- Mova a Issue conforme as regras de `docs/GITHUB-PROJECT.md` e associe o pull request correspondente.
+- Depois de concluir ou bloquear a Issue atual, pare e aguarde nova instrução. Não selecione nem inicie outra Issue automaticamente.
 
 ## 4. Princípios arquiteturais
 
